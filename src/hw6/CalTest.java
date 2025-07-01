@@ -18,12 +18,16 @@ public class CalTest {
 			
 			int result = (int) Calculator.powerXY(x, y);
 			System.out.println(x + "的" + y + "次方等於" + (int)result);
+			input.close();
 			
 		} catch (java.util.InputMismatchException e) {
 			System.out.println("輸入格式不正確!");
+			input.close();
 		} catch (CalException e) {
 			System.out.println(e.getMessage());
+			input.close();
 		}
+	
 		
 	}
 
